@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomad Escapes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <a href="#hero">
+        <img src="images/logo.png" alt="Nomad Escapes Logo">
+        <span>Nomad Escapes</span>
+      </a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#why-choose-us">Why Choose Us</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="video-background">
+      <video autoplay muted loop>
+        <source src="videos/hero-background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="hero-content">
+      <h1>Escape like a Nomad</h1>
+      <p>Welcome to Nomad Escapes Travel Agency, your one-stop solution for all your travel needs. We offer a wide range of travel packages and destinations with affordable options that set us apart from the competition. Start your journey with us and experience seamless booking services and enhanced user experience.</p>
+      <a href="#packages" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages">
+    <h2>Our Travel Packages</h2>
+    <div class="package-container">
+      <div class="package-card">
+        <h3>Adventure Getaway</h3>
+        <p>Explore thrilling destinations with our adventure-packed itineraries.</p>
+        <button class="btn learn-more" data-modal="modal1">Learn More</button>
+      </div>
+      <div class="package-card">
+        <h3>Cultural Immersion</h3>
+        <p>Discover the rich heritage and traditions of unique cultures.</p>
+        <button class="btn learn-more" data-modal="modal2">Learn More</button>
+      </div>
+      <div class="package-card">
+        <h3>Relaxation Retreat</h3>
+        <p>Unwind in serene locations with our luxury relaxation packages.</p>
+        <button class="btn learn-more" data-modal="modal3">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals for Packages Section -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Adventure Getaway</h3>
+      <p>Embark on thrilling adventures with our expertly curated itineraries. From hiking in the Himalayas to scuba diving in the Great Barrier Reef, we’ve got you covered.</p>
+      <a href="#newsletter" class="btn contact-us">Contact Us</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Cultural Immersion</h3>
+      <p>Immerse yourself in the rich traditions and heritage of unique cultures. Experience local festivals, cuisines, and traditions like never before.</p>
+      <a href="#newsletter" class="btn contact-us">Contact Us</a>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Relaxation Retreat</h3>
+      <p>Unwind and rejuvenate in serene locations. Our luxury retreats offer the perfect escape from the hustle and bustle of everyday life.</p>
+      <a href="#newsletter" class="btn contact-us">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <img src="images/travel1.jpg" alt="Travel Image 1">
+      <img src="images/travel2.jpg" alt="Travel Image 2">
+      <img src="images/travel3.jpg" alt="Travel Image 3">
+      <img src="images/travel4.jpg" alt="Travel Image 4">
+      <img src="images/travel5.jpg" alt="Travel Image 5">
+      <img src="images/travel6.jpg" alt="Travel Image 6">
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose-us">
+    <h2>Why Choose Nomad Escapes?</h2>
+    <div class="reasons">
+      <div class="reason">
+        <h3>Off-the-Beaten-Path</h3>
+        <p>We specialize in crafting journeys that take you beyond tourist hotspots to discover hidden gems and authentic experiences.</p>
+      </div>
+      <div class="reason">
+        <h3>Flexibility & Freedom</h3>
+        <p>Our escapes are designed with the independent traveler in mind, offering the perfect balance of structure and spontaneity.</p>
+      </div>
+      <div class="reason">
+        <h3>Responsible Travel</h3>
+        <p>We're committed to sustainable and ethical travel practices that respect local cultures and environments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial active">
+        <p>"Nomad Escapes made my trip unforgettable! Highly recommended!"</p>
+        <span>- Jane Doe</span>
+      </div>
+      <div class="testimonial">
+        <p>"The best travel agency I've ever worked with. Truly unique experiences!"</p>
+        <span>- John Smith</span>
+      </div>
+      <div class="testimonial">
+        <p>"Amazing service and incredible destinations. Will book again!"</p>
+        <span>- Sarah Lee</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section id="newsletter">
+    <h2>Be the First to Know</h2>
+    <p>Subscribe to our newsletter to receive news and updates.</p>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email here" required>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <div class="logo">
+          <a href="index.html#hero">
+            <img src="images/logo.png" alt="Nomad Escapes Logo">
+            <span>Nomad Escapes</span>
+          </a>
+        </div>
+        <p>Your one-stop solution for all your travel needs. Explore the world with us and create unforgettable memories.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#packages">Packages</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#why-choose-us">Why Choose Us</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="index.html#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@nomadescapes.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <div class="social-media">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Nomad Escapes. All rights reserved.</p>
+      <p>Design by <a href="https://alectronic-solutions.github.io/home/" target="_blank" rel="noopener noreferrer">Alectronic Solutions</a></p>
+      <p>
+        <a href="policy.html">Privacy Policy</a> | <a href="policy.html">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="floating-button">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Dark Mode Toggle Button -->
+  <button id="dark-mode-toggle" class="floating-button">
+    <i class="fas fa-sun"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
