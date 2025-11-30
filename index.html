@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nomad Escapes | Luxury Travel Agency</title>
     <!-- Favicon with fallback is handled by browser, but we point to the image -->
-    <link rel="icon" href="portfolio-7.png" type="image/png">
+    <link rel="icon" href="portfolio-7.jpg" type="image/jpeg">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,7 +21,7 @@
             --bg-body: #FAFAFA;
             --bg-card: #FFFFFF;
             --text-main: #2C2C2C;
-            --text-muted: #666666;
+            --text-muted: #555555; /* Darkened for better readability */
             --glass-bg: rgba(255, 255, 255, 0.90);
             --glass-border: rgba(255, 255, 255, 0.5);
             --shadow-soft: 0 20px 40px rgba(0,0,0,0.06);
@@ -37,7 +37,7 @@
             --bg-body: #0F0F0F;
             --bg-card: #181818;
             --text-main: #F0F0F0;
-            --text-muted: #A0A0A0;
+            --text-muted: #B0B0B0;
             --glass-bg: rgba(15, 15, 15, 0.85);
             --glass-border: rgba(255, 255, 255, 0.05);
             --shadow-soft: 0 20px 40px rgba(0,0,0,0.4);
@@ -55,6 +55,7 @@
         html {
             scroll-behavior: smooth;
             scroll-padding-top: 90px; /* Offset for sticky nav */
+            font-size: 18px; /* Base font size increased */
         }
 
         body {
@@ -71,11 +72,12 @@
             font-family: 'Playfair Display', serif;
             color: var(--primary-gold);
             margin-bottom: 1.2rem;
-            line-height: 1.2;
+            line-height: 1.3;
         }
 
         p {
-            font-weight: 300;
+            font-weight: 400; /* Increased weight for readability */
+            font-size: 1.05rem;
         }
 
         a {
@@ -109,7 +111,7 @@
         /* --- UTILITIES --- */
         .container {
             width: 90%;
-            max-width: 1300px; /* Wider for modern feel */
+            max-width: 1300px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -120,14 +122,14 @@
 
         .btn {
             display: inline-block;
-            padding: 14px 35px;
+            padding: 16px 40px; /* Larger button padding */
             background: var(--primary-gold);
             color: #fff;
             font-weight: 700;
             text-transform: uppercase;
-            font-size: 0.85rem;
+            font-size: 1rem; /* Larger button text */
             letter-spacing: 2px;
-            border-radius: 2px; /* Sharper corners for luxury feel */
+            border-radius: 2px;
             border: 1px solid var(--primary-gold);
             cursor: pointer;
             transition: var(--transition-fast);
@@ -167,7 +169,7 @@
         }
 
         .btn-outline:hover {
-            color: var(--text-main); /* Adaptive text color */
+            color: var(--text-main);
             border-color: #fff;
         }
 
@@ -202,18 +204,15 @@
             text-decoration: none;
         }
 
-        /* Logo Image Styling */
         .logo-img {
-            height: 50px;
+            height: 55px; /* Slightly larger logo */
             width: auto;
             object-fit: contain;
-            /* If the image has a white background, multiply mixes it nicely in light mode, 
-               but circular clip is safer for mixed modes */
             border-radius: 50%; 
         }
 
         .logo-text {
-            font-size: 1.6rem;
+            font-size: 1.8rem; /* Larger logo text */
             font-weight: 700;
             font-family: 'Playfair Display', serif;
             color: var(--primary-gold);
@@ -226,11 +225,11 @@
         }
 
         .nav-links a {
-            font-size: 0.8rem;
+            font-size: 1rem; /* Increased nav link size */
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             color: var(--text-main);
-            font-weight: 400;
+            font-weight: 500; /* Bolder for readability */
             position: relative;
         }
 
@@ -256,7 +255,7 @@
         .hamburger {
             display: none;
             cursor: pointer;
-            font-size: 1.5rem;
+            font-size: 1.8rem; /* Larger hamburger icon */
             color: var(--text-main);
         }
 
@@ -275,15 +274,16 @@
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 900px;
         }
 
         .hero-content h1 {
-            font-size: 4.5rem;
+            font-size: 5rem; /* Larger Hero Title */
             margin-bottom: 25px;
             color: #fff;
             text-shadow: 0 4px 10px rgba(0,0,0,0.3);
             letter-spacing: -1px;
+            line-height: 1.1;
         }
 
         .hero-content span {
@@ -292,11 +292,12 @@
         }
 
         .hero-content p {
-            font-size: 1.3rem;
+            font-size: 1.5rem; /* Larger Hero Text */
             margin: 0 auto 40px;
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 300;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 400;
             line-height: 1.6;
+            max-width: 700px;
         }
 
         /* --- PACKAGES --- */
@@ -305,7 +306,11 @@
         }
         
         .section-header h2 {
-            font-size: 3rem;
+            font-size: 3.5rem; /* Larger Section Headings */
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
         }
 
         .grid-3 {
@@ -336,7 +341,7 @@
         }
 
         .card-image {
-            height: 250px;
+            height: 280px; /* Taller images */
             overflow: hidden;
         }
 
@@ -352,7 +357,7 @@
         }
 
         .card-content {
-            padding: 35px;
+            padding: 40px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
@@ -360,7 +365,7 @@
         }
 
         .card-content h3 {
-            font-size: 1.8rem;
+            font-size: 2rem; /* Larger card titles */
             color: var(--text-main);
         }
 
@@ -368,13 +373,14 @@
             color: var(--text-muted);
             margin-bottom: 25px;
             flex-grow: 1;
-            font-size: 1rem;
+            font-size: 1.1rem; /* Larger body text */
+            line-height: 1.7;
         }
 
         /* --- GALLERY --- */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Strict 3 columns on desktop for editorial look */
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-top: 40px;
         }
@@ -384,7 +390,7 @@
             overflow: hidden;
             border-radius: 2px;
             cursor: pointer;
-            height: 300px; /* Taller images */
+            height: 350px; /* Taller images */
         }
 
         .gallery-item img {
@@ -417,49 +423,49 @@
 
         .gallery-overlay i {
             color: #fff;
-            font-size: 2rem;
+            font-size: 2.5rem;
             border: 1px solid #fff;
             border-radius: 50%;
-            padding: 15px;
+            padding: 20px;
             backdrop-filter: blur(5px);
         }
 
         /* --- WHY CHOOSE US --- */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 60px;
             text-align: center;
             margin-top: 50px;
         }
 
         .feature-item i {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: var(--primary-gold);
             margin-bottom: 25px;
             background: rgba(197, 160, 40, 0.1);
-            padding: 20px;
+            padding: 25px;
             border-radius: 50%;
         }
 
         .feature-item h3 {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             margin-bottom: 15px;
             color: var(--text-main);
         }
 
         .feature-item p {
             color: var(--text-muted);
-            font-size: 1rem;
+            font-size: 1.15rem;
         }
 
         /* --- TESTIMONIALS --- */
         .testimonial-slider {
             position: relative;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             overflow: hidden;
-            min-height: 250px;
+            min-height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -485,7 +491,7 @@
 
         .testimonial p {
             font-family: 'Playfair Display', serif;
-            font-size: 2rem;
+            font-size: 2.4rem; /* Larger testimonial text */
             font-style: italic;
             margin-bottom: 30px;
             color: var(--text-main);
@@ -498,7 +504,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         /* --- NEWSLETTER --- */
@@ -508,44 +514,45 @@
             background-attachment: fixed;
             text-align: center;
             color: #fff;
-            padding: 120px 0;
+            padding: 140px 0;
         }
         
-        #newsletter h2 { color: #fff; margin-bottom: 10px; }
-        #newsletter p { color: rgba(255,255,255,0.8); margin-bottom: 30px;}
+        #newsletter h2 { color: #fff; margin-bottom: 15px; font-size: 2.5rem; }
+        #newsletter p { color: rgba(255,255,255,0.9); margin-bottom: 40px; font-size: 1.2rem; }
 
         form {
             display: flex;
             justify-content: center;
             gap: 0; /* Connected inputs */
             margin-top: 30px;
-            max-width: 500px;
+            max-width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
 
         input[type="email"] {
-            padding: 15px 25px;
+            padding: 18px 30px;
             width: 100%;
             border: none;
             border-radius: 2px 0 0 2px;
             font-family: 'Lato', sans-serif;
             outline: none;
-            background: rgba(255,255,255,0.9);
-            font-size: 1rem;
+            background: rgba(255,255,255,0.95);
+            font-size: 1.1rem;
         }
 
         form button {
             border-radius: 0 2px 2px 0;
             margin: 0;
             border: none;
+            padding: 18px 40px;
         }
 
         /* --- FOOTER --- */
         footer {
             background: #050505;
-            padding: 80px 0 30px;
-            font-size: 0.9rem;
+            padding: 90px 0 40px;
+            font-size: 1rem;
             color: #888;
             border-top: 1px solid #1a1a1a;
         }
@@ -554,19 +561,19 @@
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
             gap: 60px;
-            margin-bottom: 60px;
+            margin-bottom: 70px;
         }
 
         .footer-col h3 {
             color: #fff;
             margin-bottom: 25px;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
 
         .footer-col ul li {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         .footer-col ul li a:hover {
@@ -581,8 +588,8 @@
         }
 
         .social-links a {
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background: rgba(255,255,255,0.05);
             display: flex;
@@ -590,6 +597,7 @@
             justify-content: center;
             transition: var(--transition-fast);
             color: #fff;
+            font-size: 1.2rem;
         }
 
         .social-links a:hover {
@@ -606,7 +614,7 @@
             flex-wrap: wrap;
             gap: 20px;
             align-items: center;
-            font-size: 0.85rem;
+            font-size: 0.95rem;
         }
 
         .copyright-link {
@@ -647,7 +655,7 @@
             padding: 50px;
             border-radius: 2px;
             width: 90%;
-            max-width: 700px;
+            max-width: 800px;
             position: relative;
             border: 1px solid var(--primary-gold);
             box-shadow: 0 25px 50px rgba(0,0,0,0.5);
@@ -655,13 +663,21 @@
             overflow-y: auto;
             color: var(--text-main);
         }
+        
+        .modal-content h3 {
+            font-size: 2.5rem;
+        }
+        
+        .modal-content p {
+            font-size: 1.15rem;
+        }
 
         .close-modal {
             position: absolute;
             top: 20px;
             right: 25px;
             color: var(--text-muted);
-            font-size: 2rem;
+            font-size: 2.5rem;
             cursor: pointer;
             transition: var(--transition-fast);
         }
@@ -687,8 +703,8 @@
         }
 
         .float-btn {
-            width: 50px;
-            height: 50px;
+            width: 60px; /* Larger float buttons */
+            height: 60px;
             border-radius: 50%;
             background: var(--primary-gold);
             color: #fff;
@@ -699,7 +715,7 @@
             cursor: pointer;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             transition: var(--transition-fast);
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
 
         .float-btn:hover {
@@ -708,14 +724,22 @@
         }
 
         /* --- RESPONSIVE --- */
+        @media (max-width: 1200px) {
+            .hero-content h1 { font-size: 4rem; }
+        }
+
         @media (max-width: 1024px) {
             .gallery-grid { grid-template-columns: repeat(2, 1fr); }
             .hero-content h1 { font-size: 3.5rem; }
+            .section-header h2 { font-size: 3rem; }
         }
 
         @media (max-width: 768px) {
+            html { font-size: 16px; /* Reset base size for mobile to prevent overflow */ }
+            
             .hero-content h1 { font-size: 2.8rem; }
-            .section-header h2 { font-size: 2.2rem; }
+            .hero-content p { font-size: 1.2rem; }
+            .section-header h2 { font-size: 2.4rem; }
             .gallery-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; gap: 40px; }
             
@@ -730,12 +754,31 @@
                 background: var(--bg-body);
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
+                padding-top: 40px;
                 transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
                 border-top: 1px solid var(--nav-border);
             }
 
             .nav-links.active { left: 0; }
+            
+            .nav-links a {
+                font-size: 1.2rem; /* Larger links in mobile menu */
+                margin: 15px 0;
+            }
+            
+            .testimonial p { font-size: 1.8rem; }
+            
+            form { flex-direction: column; gap: 10px; }
+            input[type="email"] { width: 100%; border-radius: 4px; }
+            form button { width: 100%; border-radius: 4px; }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-content h1 { font-size: 2.2rem; }
+            .section-header h2 { font-size: 2rem; }
+            .btn { padding: 12px 25px; font-size: 0.9rem; }
+            .card-content h3 { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -789,7 +832,7 @@
         <div class="container">
             <div class="text-center section-header reveal">
                 <h2>Our Exclusive Experiences</h2>
-                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Handpicked destinations designed to awaken your spirit of adventure.</p>
+                <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto; font-size: 1.2rem;">Handpicked destinations designed to awaken your spirit of adventure.</p>
             </div>
             
             <div class="grid-3">
@@ -837,7 +880,7 @@
         <div class="container">
             <div class="text-center section-header reveal">
                 <h2>Captured Moments</h2>
-                <p style="color: var(--text-muted);">A visual journal of where we've been and where you're going.</p>
+                <p style="color: var(--text-muted); font-size: 1.2rem;">A visual journal of where we've been and where you're going.</p>
             </div>
 
             <div class="gallery-grid">
@@ -940,7 +983,7 @@
                     <div class="logo">
                         <span class="logo-text">Nomad Escapes</span>
                     </div>
-                    <p style="margin-top: 20px; color: #888; line-height: 1.6;">Crafting unforgettable journeys for the modern wanderer since 2010. We are dedicated to providing the highest level of service and expertise.</p>
+                    <p style="margin-top: 20px; color: #888; line-height: 1.6; font-size: 1.1rem;">Crafting unforgettable journeys for the modern wanderer since 2010. We are dedicated to providing the highest level of service and expertise.</p>
                 </div>
                 <div class="footer-col">
                     <h3>Quick Links</h3>
@@ -982,7 +1025,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h3>Adventure Getaway</h3>
-            <img src="https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" style="height: 300px; object-fit: cover; margin: 20px 0; border-radius: 2px;">
+            <img src="https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" style="height: 350px; object-fit: cover; margin: 25px 0; border-radius: 2px;">
             <p>Embark on thrilling adventures with our expertly curated itineraries. From hiking in the Himalayas to scuba diving in the Great Barrier Reef, we’ve got you covered. Includes equipment rental, professional guides, and insurance.</p>
             <br>
             <a href="#contact" class="btn contact-us-btn">Request Itinerary</a>
@@ -994,7 +1037,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h3>Cultural Immersion</h3>
-            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" style="height: 300px; object-fit: cover; margin: 20px 0; border-radius: 2px;">
+            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" style="height: 350px; object-fit: cover; margin: 25px 0; border-radius: 2px;">
             <p>Immerse yourself in the rich traditions and heritage of unique cultures. Experience local festivals, cuisines, and traditions like never before. Includes homestays, cooking classes, and language workshops.</p>
             <br>
             <a href="#contact" class="btn contact-us-btn">Request Itinerary</a>
@@ -1006,7 +1049,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h3>Relaxation Retreat</h3>
-            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" style="height: 300px; object-fit: cover; margin: 20px 0; border-radius: 2px;">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" style="height: 350px; object-fit: cover; margin: 25px 0; border-radius: 2px;">
             <p>Unwind and rejuvenate in serene locations. Our luxury retreats offer the perfect escape from the hustle and bustle. Includes spa treatments, yoga sessions, and full board gourmet meals.</p>
             <br>
             <a href="#contact" class="btn contact-us-btn">Request Itinerary</a>
@@ -1018,7 +1061,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h3>Privacy Policy & Terms</h3>
-            <div style="max-height: 300px; overflow-y: auto; text-align: left; padding-right: 15px;">
+            <div style="max-height: 400px; overflow-y: auto; text-align: left; padding-right: 20px;">
                 <p><strong>1. Privacy Policy:</strong> We collect and use your personal information to provide and improve our services. We do not share your information with third parties without your consent. Types of data: Name, email, usage data.</p>
                 <br>
                 <p><strong>2. Terms of Service:</strong> By accessing our website, you agree to use our services only for lawful purposes. All content is property of Nomad Escapes. We are not liable for external damages.</p>
